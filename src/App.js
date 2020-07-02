@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import styles from './App.module.css'
 import {fetchData} from './api'
 // components imports
-import { Cards, Chart, CountryPicker } from './components'
+import { Cards } from './components'
 
 
 export default class App extends Component {
