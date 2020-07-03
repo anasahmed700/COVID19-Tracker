@@ -1,8 +1,14 @@
 body {
     background-color: rgb(240, 240, 240);
+    margin: 30px 5%;
+
 }
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+.covid-img{
+    margin: 30px auto;
 }
