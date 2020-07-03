@@ -3,6 +3,7 @@ import axios from  'axios'
 
 const apiUrl = 'https://covid19.mathdro.id/api'
 
+
 export const fetchData = async (country) => {
     let changeableUrl = apiUrl
 
