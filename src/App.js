@@ -5,6 +5,7 @@ import styles from './App.module.css'
 import {fetchData} from './api'
 // components imports
 import { Cards, Chart, CountryPicker } from './components'
+import AppBarHeader from './components/AppBarHeader.jsx'
 import covid19 from './images/image.png'
 
 
@@ -30,7 +31,11 @@ export default class App extends Component {
     render() {
         const {data, country} = this.state
         return (
-            <div className={styles.container}>
+            <div>
+
+                <AppBarHeader />
+                <div className={styles.container}>
+
                 <img src={covid19} alt="COVID-19" className="covid-img"/>
 
                 <Cards data={data}/>
@@ -39,6 +44,7 @@ export default class App extends Component {
                 
                 <Chart data={data} country={country} />
 
+                </div>
             </div>
         )
     }
